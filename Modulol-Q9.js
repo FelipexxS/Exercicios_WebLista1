@@ -6,11 +6,12 @@ const joao = {
     }
 }
 
-
-function saudacaoMaria(){
-    nome = 'Maria'
-    joao.saudacao()
+var maria = {
+    nome: 'Maria'
 }
 
-saudacaoMaria(1)
-console.log(joao.nome)
+console.log(typeof maria)
+console.log(typeof Object)
+joao.saudacao.call(maria)
+
+console.log(joao)
