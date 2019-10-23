@@ -6,12 +6,10 @@ const joao = {
     }
 }
 
-var maria = {
+const maria = {
     nome: 'Maria'
 }
 
-console.log(typeof maria)
-console.log(typeof Object)
-joao.saudacao.call(maria)
+const saudacaoMaria = joao.saudacao.bind(maria)
 
-console.log(joao)
+saudacaoMaria()

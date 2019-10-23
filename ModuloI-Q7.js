@@ -3,14 +3,12 @@
 function try_catch() {
     try {
         if (Math.random() > 0.3)
-            return
-        console.log('Mensagem qualquer')
             throw new Error()
-            
+            return            
     } catch (e) {
-
+        console.log('Número maior que 0.3' )
     } finally{
-        console.log('Fim')
+        console.log('Mensagem qualquer')
     }
 }
 
